@@ -1,177 +1,19 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neo ID Checker (Frontend)</title>
-    <style>
-        /* CSS Sederhana & Modern */
-        :root {
-            --primary: #00d2aa; /* Warna khas Neo (Hijau Mint) */
-            --dark: #1a1a1a;
-            --error: #ff4d4f;
-            --success: #52c41a;
-        }
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/icon-BjFesMej.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neo Agent Web</title>
+    <script type="module" crossorigin src="/assets/index-CTEVP1Ip.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-YkF2ou4_.css">
+  </head>
+  <body>
+    <div id="root"></div>
 
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f4f6f8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-
-        .card {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-            width: 100%;
-            max-width: 400px;
-            text-align: center;
-        }
-
-        h1 {
-            color: var(--dark);
-            font-size: 24px;
-            margin-bottom: 8px;
-        }
-
-        p {
-            color: #666;
-            margin-bottom: 24px;
-            font-size: 14px;
-        }
-
-        .input-group {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #333;
-        }
-
-        input[type="text"] {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-size: 16px;
-            box-sizing: border-box; /* Agar padding tidak merusak lebar */
-            transition: 0.3s;
-        }
-
-        input[type="text"]:focus {
-            border-color: var(--primary);
-            outline: none;
-        }
-
-        button {
-            width: 100%;
-            background-color: var(--primary);
-            color: white;
-            font-weight: bold;
-            padding: 14px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-
-        button:hover {
-            opacity: 0.9;
-        }
-
-        #result {
-            margin-top: 20px;
-            padding: 15px;
-            border-radius: 8px;
-            font-weight: bold;
-            display: none; /* Sembunyi default */
-        }
-
-        .valid-result {
-            background-color: #f6ffed;
-            border: 1px solid #b7eb8f;
-            color: var(--success);
-        }
-
-        .invalid-result {
-            background-color: #fff1f0;
-            border: 1px solid #ffa39e;
-            color: var(--error);
-        }
-    </style>
-</head>
-<body>
-
-    <div class="card">
-        <h1>Cek Neo ID</h1>
-        <p>Verifikasi keaslian Neo ID Anda di sini.</p>
-
-        <div class="input-group">
-            <label for="neoInput">Masukkan ID</label>
-            <input type="text" id="neoInput" placeholder="Contoh: NEO-xxxx-xxxx">
-        </div>
-
-        <button onclick="handleCheck()">Periksa ID</button>
-
-        <div id="result"></div>
-    </div>
-
-    <script>
-        function handleCheck() {
-            const inputVal = document.getElementById('neoInput').value.trim();
-            const resultBox = document.getElementById('result');
-
-            if (!inputVal) {
-                alert("Harap masukkan ID terlebih dahulu!");
-                return;
-            }
-
-            // Memanggil fungsi logika pengecekan
-            const isValid = checkNeoIDLogic(inputVal);
-
-            resultBox.style.display = 'block';
-            if (isValid) {
-                resultBox.className = 'valid-result';
-                resultBox.innerHTML = '✅ <b>Neo ID ASLI</b><br>ID Valid dan Terverifikasi.';
-            } else {
-                resultBox.className = 'invalid-result';
-                resultBox.innerHTML = '❌ <b>Neo ID PALSU / TIDAK VALID</b><br>Format atau kode salah.';
-            }
-        }
-
-        // ============================================================
-        // BAGIAN PENTING: LOGIKA PENGECEKAN
-        // ============================================================
-        function checkNeoIDLogic(id) {
-            // KARENA SAYA TIDAK BISA MEMBACA FILE REPO ANDA,
-            // SAYA MEMBUAT LOGIKA CONTOH DI BAWAH INI.
-            
-            // --> HAPUS KODE DI BAWAH DAN GANTI DENGAN LOGIKA ASLI <--
-            
-            // [CONTOH LOGIKA]: 
-            // Anggap ID asli harus diawali "NEO-" dan panjangnya 10 karakter.
-            // Anda harus menggantinya sesuai file index-CTEVP1Ip.js
-            
-            const regexContoh = /^NEO-[A-Z0-9]{5}$/; // Contoh Regex
-            
-            // Ganti baris ini dengan return true/false berdasarkan logika asli
-            if (id.startsWith("NEO") && id.length > 5) {
-                return true; 
-            } else {
-                return false;
-            }
-        }
-    </script>
-
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"25f2ec5f741c4f76865ee129f824d760","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
